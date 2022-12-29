@@ -1,0 +1,139 @@
+.head{
+    height: 55px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color:white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(221, 219, 219);
+    z-index:100;
+    
+}
+.left-section{
+    margin-right:70px;
+    display:flex;
+    align-items:center;
+}
+.menu-img{
+    height:24px;
+    margin:0px 24px;
+    cursor: pointer;
+    
+  }
+  .youtube-logo{
+    height:20px;
+  }
+.mid-section{
+    
+    flex:1;
+    margin-right: 35px;
+    max-width:500px;
+    display:flex;
+    align-items:center;
+}
+.search-bar{
+    flex:1;
+    height:36px;
+    padding-left:10px;
+    font-size:16px;
+    border-radius: 2px ;
+    border:1px solid rgb(201, 200, 200);
+    box-shadow:inset 1px 2px 3px rgba(0,0,0,0.05);
+    width:0;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+}
+.search-button{
+    height:40px;
+    width:66px;
+    background-color:rgb(247, 247, 247) ;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(201, 200, 200);
+    margin-left:-1px;
+    margin-right:10px;
+    position:relative;
+    cursor: pointer;
+
+  }
+  .search-button,.mic-button,.R-icon-container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-button .tooltip,.mic-button .tooltip,.R-icon-container .tooltip{
+  
+     position:absolute;
+     background-color: gray;
+     color:white;
+     padding:4px;
+     border-radius: 2px;
+     font-size: 12px;
+     bottom:-30px;
+     opacity:0;
+     transition: opacity 0.15s;
+     pointer-events:none;
+     white-space: nowrap;
+  }
+  .search-button:hover .tooltip,.mic-button:hover .tooltip,.R-icon-container:hover .tooltip{
+    opacity:1;
+  }
+  .search-img{
+    height:25px;
+  
+  
+ }
+  .mic-button{
+      height:40px;
+      width:40px;
+      border-radius:20px;
+      border:none;
+      background-color: rgb(246, 245, 245);
+      cursor: pointer;
+  
+  }
+  .mic-img{
+    height:24px;
+  }
+  
+
+.right-section{
+    width:180px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-right:20px;
+    flex-shrink:0;
+    
+}
+.upload-img,.apps-img,.notify-img{
+  height:24px;
+  cursor: pointer;
+}
+
+.notify-icon-container{
+  position:relative;
+}
+.notify-icon-count{
+position:absolute;
+top:-2px;
+right:-5px;
+background-color: rgb(201, 4, 4);
+color:white;
+
+font-size:11px;
+padding:1px 5px;
+border-radius:10px;
+}
+.profile-img{
+    height:32px;
+    border-radius:16px;
+    cursor:pointer;
+}
